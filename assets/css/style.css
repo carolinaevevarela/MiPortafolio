@@ -1,0 +1,92 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  background-image: url('../img/bg_hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 10rem;
+  weight: 1280px;
+  height: 737px;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+}
+
+h3 {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  color: #373A3C;
+}
+
+h5 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.display-1 {
+  padding-top: 25rem;
+}
+
+.navbar {
+  background-color: #660066;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.navbar-brand {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.bajada {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: #373A3C;
+  line-height: 50px;
+  text-align: center;
+}
+
+.card-text {
+  line-height: 24px;
+}
+
+p {
+  line-height: 40px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+#work {
+  background-color: #660066;
+}
+
+footer {
+  background-color: #660066;
+}
+
+.footer-brand {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: left;
+  color: #ffffff;
+  line-height: 88px;
+}
+
+.fav-icon {
+  color: #ffffff;
+}
