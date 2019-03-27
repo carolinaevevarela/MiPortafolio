@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale:1.0">
 
 <!--Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Oswald:200,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Oswald:200,400,600,700|Helvetica+Neue:300" rel="stylesheet">
 
 <!--CSS de Bootstrap 4.3.x-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -32,16 +32,16 @@
       <div class="collapse navbar-collapse text-white" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Sobre mí<span class="sr-only">(current)</span></a>
+            <a class="nav-link text-white" href="#about">Sobre mí<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Experiencia</a>
+            <a class="nav-link text-white" href="#experience">Experiencia</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Trabajos</a>
+            <a class="nav-link text-white" href="#work">Trabajos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link text-white" href="#contact">Contacto</a>
           </li>
         </ul>
       </div>
@@ -57,34 +57,46 @@
 </header>
 
 <!--Bajada-->
-<section class="container">
-  <h3 class="bajada py-5 my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus.</h3>
+<section id="about" class="container d-none d-sm-block">
+  <h3 class="bajada py-5 my-5">Editora y diseñadora editorial. Socia fundadora de Tríada Ediciones.</h3>
 </section>
 
 <!--Descripción-->
-<section id="recipes">
-  <div class="container">
+<section>
+  <div class="container d-none d-sm-block">
     <div class="row">
 
 <article class="recipe container col-6 px">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus. Nullam fermentum turpis et dolor euismod consequat sed sed ante. Curabitur vel lacinia nisi. Sed mollis condimentum rhoncus. Proin sed diam eu risus auctor aliquet. Sed nisi lorem, mollis sit amet gravida in, finibus ut diam. Nunc cursus lacus ex, id interdum nibh tristique ac. Maecenas in mi blandit, euismod ipsum eu, lobortis nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris ultricies sem eu massa pellentesque, id interdum nibh luctus. Nam ac orci id neque posuere aliquam.</p>
+  <p>Licenciada en Literatura hispánica, mención Literatura, por la Universidad de Chile, desarrollé mi carrera en torno al mundo editorial. A propósito de ello, me especialicé a través del Diplomado de Edición y Publicaciones de la Pontificia Universidad Católica de Chile y del Diplomado en Diseño Editorial impartido por la Universidad de Chile. Trabajé durante cinco años en una editorial independiente llamada Uqbar Editores y fundé, junto a dos socios amigos, Tríada Ediciones, la que está orientada a un público juvenil que lee novelas de ciencia ficción, fantasía y romance.</p>
 </article>
 
 <article class="recipe container col-6">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus. Nullam fermentum turpis et dolor euismod consequat sed sed ante. Curabitur vel lacinia nisi. Sed mollis condimentum rhoncus. Proin sed diam eu risus auctor aliquet. Sed nisi lorem, mollis sit amet gravida in, finibus ut diam. Nunc cursus lacus ex, id interdum nibh tristique ac. Maecenas in mi blandit, euismod ipsum eu, lobortis nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris ultricies sem eu massa pellentesque, id interdum nibh luctus. Nam ac orci id neque posuere aliquam.</p>
+<p>Actualmente soy estudiante de Academia Desafío Latam para convertirme en Desarrolladora Full Stack y darle un giro a mi carrera laboral. Con ello pretendo no solo ampliar mi campo de trabajo, si no explorar futuras aplicaciones que puedan desarrollarse en torno a la literatura en Chile.</p>
 </article>
 </div>
 </div>
 </section>
 
-<section>
+<section id="experience">
   <h2 class="py-5 my-5">MI EXPERIENCIA</h2>
+  <div class="container text-center my-5">
+    <div class="row">
+    <div class="col-md-6">
+    <i class="fas fa-edit fa-7x"></i>
+    <h3 class="my-3">Editora de contenidos</h3>
+    </div>
+    <div class="col-md-6">
+    <i class="fab fa-adobe fa-7x"></i>
+    <h3 class="my-3">Diseñadora editorial</h3>
+    </div>
+    </div>
+  </div>
 </section>
 
 <!--Mis trabajos-->
 
-<section id="work" class="container-fluid my-5 p-5">
-  <h2 class="display-1 text-center text-white font-weight-bold my-5 p-5">MIS ÚLTIMOS TRABAJOS</h2>
+<section id="work" class="container-fluid my-5">
+  <h2 class="text-center text-white font-weight-bold my-5 p-5">MIS ÚLTIMOS TRABAJOS</h2>
 
 <div class="card-deck">
   <div class="card-deck">
@@ -93,6 +105,7 @@
     <div class="card-body">
       <h5 class="card-title">Meet&Coffee</h5>
       <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
+      <a href="#" class="btn btn-outline-info mr-4" data-toggle="modal" data-target="#meet_coffee">Ver más</a>
     </div>
   </div>
   <div class="card">
@@ -100,6 +113,7 @@
     <div class="card-body">
       <h5 class="card-title">Iguana Page</h5>
       <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
+      <a href="#" class="btn btn-outline-info mr-4" data-toggle="modal" data-target="#iguana">Ver más</a>
     </div>
   </div>
   <div class="card">
@@ -107,6 +121,7 @@
     <div class="card-body">
       <h5 class="card-title">Suricata</h5>
       <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
+      <a href="#" class="btn btn-outline-info mr-4" data-toggle="modal" data-target="#suricata">Ver más</a>
     </div>
   </div>
 </div>
@@ -120,6 +135,7 @@
     <div class="card-body">
       <h5 class="card-title">Cuppon</h5>
       <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
+      <a href="#" class="btn btn-outline-info mr-4" data-toggle="modal" data-target="#cuppon">Ver más</a>
     </div>
   </div>
   <div class="card">
@@ -127,6 +143,7 @@
     <div class="card-body">
       <h5 class="card-title">Ricomida</h5>
       <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
+      <a href="#" class="btn btn-outline-info mr-4" data-toggle="modal" data-target="#ricomida">Ver más</a>
     </div>
   </div>
   <div class="card">
@@ -134,31 +151,168 @@
     <div class="card-body">
       <h5 class="card-title">DMark</h5>
       <p class="card-text">Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
+      <a href="#" class="btn btn-outline-info mr-4" data-toggle="modal" data-target="#dmark">Ver más</a>
     </div>
   </div>
 </div>
 </div>
 </section>
 
+<!--Modales-->
+    <div class="modal fade" id="meet_coffee" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Meet & Coffee</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="assets/img/meet_coffee.png" class="img-fluid my-3" alt="meet_coffee">
+            <p class="modal1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="modal2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="modal3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="iguana" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Iguana page</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="assets/img/iguana_page.png" class="img-fluid my-3" alt="iguana">
+            <p class="modal1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="modal2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="modal3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="suricata" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Suricata</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="assets/img/suricata.png" class="img-fluid my-3" alt="suricata">
+            <p class="modal1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="modal2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="modal3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="cuppon" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Cuppon</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="assets/img/cuppon.png" class="img-fluid my-3" alt="cuppon">
+            <p class="modal1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="modal2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="modal3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="ricomida" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Ricomida</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="assets/img/ricomida.png" class="img-fluid my-3" alt="ricomida">
+            <p class="modal1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="modal2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="modal3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="dmark" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">DMark</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="assets/img/dmark.png" class="img-fluid my-3" alt="dmark">
+            <p class="modal1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="modal2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="modal3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 <!--Contacto-->
 <section id="contact" class="container my-5">
-  <h3 class="display-2 font-weight-bold text-center my-4">CONTACTO</h3>
+  <h3 class="font-weight-bold text-center my-4">CONTACTO</h3>
 <div class="typeform-widget" data-url="https://carolinavarela709940.typeform.com/to/kdWnXB" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=kdWnXB&utm_source=typeform.com-13606958-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a> </div>
 </section>
 
 
 <!--Footer-->
 <footer class="container-fluid text-center">
-  <a class="footer-brand ml-auto">CAROLINA</a>
+  <h3 class="container footer-brand">CAROLINA</h3>
+
+  <div class="container icons text-right py-5">
   <a class="fav-icon" href="https://github.com/"><i class="fab fa-github fa-3x"></i></a>
   <a class="fav-icon" href="https://cl.linkedin.com"><i class="fab fa-linkedin-in fa-3x"></i></a>
   <a class="fav-icon" href="https://twitter.com/"><i class="fab fa-twitter fa-3x"></i></a>
   <a class="fav-icon" href="https://facebook.com/"><i class="fab fa-facebook fa-3x"></i></a>
+  </div>
 </footer>
 
     <!--jquery 3.3.1 Sin slim-->
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.js"
+        integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
         crossorigin="anonymous"></script>
     <!--Popper JS 1.14.7-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
